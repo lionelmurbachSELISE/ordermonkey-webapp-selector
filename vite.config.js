@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-console.log('Vite config loaded, tailwindcss plugin:', typeof react);
+console.log('Vite config loaded, tailwindcss plugin:', typeof tailwindcss);
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/landingpage-urbanfood/'
+  plugins: [tailwindcss()],
 })
