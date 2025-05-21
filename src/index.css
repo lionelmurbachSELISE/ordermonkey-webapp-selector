@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply min-h-screen text-gray-900;
+  }
+  
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+/* Remove any conflicting styles */
+:root {
+  color-scheme: light;
+}
