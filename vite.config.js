@@ -5,5 +5,5 @@ console.log('Vite config loaded, tailwindcss plugin:', typeof tailwindcss);
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: '/landingpage-urbanfood/', // <- WICHTIG für GitHub Pages!
+  base: '/landingpage-urbanfood/', 
 })
