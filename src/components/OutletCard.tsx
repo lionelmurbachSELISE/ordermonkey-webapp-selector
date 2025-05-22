@@ -18,7 +18,6 @@ export const OutletCard = ({ outlet }: OutletCardProps) => {
             alt={outlet.name}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 border-2 border-white/60 group-hover:border-white/80 rounded-xl"
           />
-          {/* White gradient overlay for a different visual effect */}
           <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-white/20 to-transparent rounded-xl"></div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-4">
