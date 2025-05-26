@@ -1,17 +1,9 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-console.log('Vite config loaded, react plugin:', typeof react);
+console.log('Vite config loaded, tailwindcss plugin:', typeof tailwindcss);
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/ordermonkey-webapp-selector/',
-  build: {
-    outDir: 'dist',
-    sourcemap: true,
-  },
-  server: {
-    port: 3000,
-    open: true,
-  },
+  plugins: [tailwindcss()],
+  base: '/ordermonkey-webapp-selector/', 
 })
