@@ -19,14 +19,8 @@ function App() {
             <span className="block w-16 h-1 rounded-full bg-white mt-2"></span>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 w-full max-w-7xl mx-auto px-4">
-            {outlets.map((outlet, index) => (
-              <div 
-                key={outlet.id} 
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <OutletCard outlet={outlet} />
-              </div>
+            {outlets.map((outlet) => (
+              <OutletCard key={outlet.id} outlet={outlet} />
             ))}
           </div>
         </main>
